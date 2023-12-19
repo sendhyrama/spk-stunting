@@ -17,3 +17,102 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+
+# Laravel specific
+.env
+public/storage
+/storage/*.key
+/vendor/
+/node_modules/
+/public/hot
+/public/storage
+/storage/*.key
+/storage/debugbar
+
+# Homestead/Vagrant
+Homestead.json
+Homestead.yaml
+Homestead.yaml.example
+Vagrantfile
+
+# PhpStorm
+.idea
+
+# Sublime Text
+.sublime-project
+.sublime-workspace
+
+# VS Code
+.vscode
+
+# Laravel Mix
+npm-debug.log
+yarn-error.log
+yarn.lock
+/mix-manifest.json
+/public/css
+/public/js
+
+# Laravel Dusk
+.dusk/
+
+# PHPUnit
+/phpunit.xml
+/vendor/phpunit
+
+# Composer
+/vendor
+
+# Artisan
+/artisan
+
+# PHPUnit
+/phpunit.xml
+
+# Composer
+/composer.phar
+
+# Laravel Forge
+forge.yml
+
+# Logs and databases
+/storage/logs/
+/storage/app/*.log
+!/storage/app/.gitkeep
+/storage/framework/
+/storage/app/public/uploads/
+/storage/framework/sessions/
+/storage/framework/views/
+/storage/framework/cache/
+
+# General
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Ignore environment files
+.env
+.env.backup
+.env.example
+.env.local
+.env.*.local
+.env.test
+.env.testing
+
+# Ignore sensitive information
+config/secret/*
+
+# Ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.log
+*.sql
+*.sqlite
+*.xlsx
+*.zip
+*.gz
+*.json
