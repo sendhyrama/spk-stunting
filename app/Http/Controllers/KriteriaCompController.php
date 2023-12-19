@@ -7,6 +7,7 @@ use App\Models\KriteriaComp;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Yajra\DataTables\Facades\DataTables;
 
 class KriteriaCompController extends Controller
 {
@@ -19,7 +20,6 @@ class KriteriaCompController extends Controller
 				"kriteria.id"
 			)->select(
 					"kriteria_banding.kriteria1 as idkriteria",
-					"kriteria.id",
 					"kriteria.name"
 				)->groupBy("kriteria1", 'name')->get();
 		} catch (QueryException $e) {
@@ -50,6 +50,17 @@ class KriteriaCompController extends Controller
 				->withErrors("Kesalahan SQLState #" . $e->errorInfo[0]);
 		}
 	}
+	
+	public function datatables()
+	{
+		return DataTables::eloquent(Kriteria::query())
+			->addColumn('result', function (Kriteria $kriteria) {
+				$jmlbanding = KriteriaComp->count();
+				$jmlcrit = Kriteria->count();
+				return $jmlbanding > $jmlcrit;
+			})->toJson();
+	}
+
 	public function index()
 	{
 		$crit = Kriteria::get();
