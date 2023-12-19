@@ -1,34 +1,3 @@
-# Deskripsi
-
-<p>Aplikasi ini adalah aplikasi Sistem Pendukung Keputusan metode AHP dan SAW berbasis web dengan sub kriteria. AHP digunakan sebagai penilaian Kriteria & Sub Kriteria dan SAW digunakan sebagai penilaian Alternatif. Komponen yang digunakan:</p>
-
--   [Laravel 10](https://laravel.com/)
--   [PHP 8.2](https://www.php.net/)
--   [Mazer Dashboard Template](https://github.com/zuramai/mazer)
--   [Font Awesome 5](https://fontawesome.com/)
--   [ApexCharts](https://apexcharts.com/)
--   [Bootstrap Icons](https://icons.getbootstrap.com)
--   [DataTables](https://datatables.net/)
--   [sweetalert2](https://sweetalert2.github.io)
--   [toastify-js](https://apvarun.github.io/toastify-js/)
-
-## Cara Menggunakan
-
-1. Download atau clone aplikasi ini
-2. Masuk ke aplikasi yang sudah didownload atau di-clone.
-3. Buka Command Prompt atau PowerShell, lalu masukkan perintah `composer install`.
-4. Ganti nama `.env.example` menjadi `.env`, lalu atur nama Database pada file .env.
-5. Masukkan perintah `php artisan key:generate`
-6. Masukkan perintah `php artisan migrate --seed`
-7. Masukkan perintah `php artisan serve`, lalu buka <http://localhost:8000/>
-
-### Kredensial
-
-Email: <test@example.com><br>
-Password: password
-
----
-
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
