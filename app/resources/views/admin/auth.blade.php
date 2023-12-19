@@ -24,7 +24,7 @@
 				<div id="auth-left">
 					<div class="auth-logo">
 						<div class="d-flex justify-content-between">
-							<img src="{{ asset('assets/compiled/svg/logo.svg') }}" alt="Logo" />
+							<!-- <img src="{{ asset('assets/compiled/svg/logo.svg') }}" alt="Logo" /> -->
 							<div class="theme-toggle d-flex gap-2 align-items-center mt-2">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" role="img" class="iconify iconify--system-uicons"
