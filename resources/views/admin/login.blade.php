@@ -1,7 +1,7 @@
 @extends('admin.auth')
 @section('title', 'Login')
 @section('auth-title', 'Login')
-@section('auth-subtitle', 'Login untuk menggunakan Aplikasi Sistem Pendukung Keputusan')
+@section('auth-subtitle', 'SPK Stunting')
 @section('auth-css', asset('assets/compiled/css/auth.css'))
 @section('content')
 	<form action="{{ route('login.perform') }}" method="post" enctype="multipart/form-data"
@@ -38,7 +38,7 @@
 				data-bs-toggle="tooltip" data-bs-placement="top" value="1"
 				title="Berlaku selama 30 hari, jangan dicentang jika bukan perangkat Anda." />
 			<label class="form-check-label text-gray-600" for="remember-me">
-				Biarkan saya login
+				Ingat saya
 			</label>
 		</div>
 		<button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">
