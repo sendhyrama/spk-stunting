@@ -25,7 +25,7 @@ steps:
       - 'COMMIT_SHA=$COMMIT_SHA'
       # Add the following line to specify the logs bucket
       - '--logs-location'
-      - 'gs://your-logs-bucket'  # Replace 'your-logs-bucket' with your actual Cloud Storage bucket
+      - 'gs://artifacts.spk-stunting.appspot.com'  # Replace 'your-logs-bucket' with your actual Cloud Storage bucket
 
 images:
   - 'gcr.io/$PROJECT_ID/spk-stunting:$COMMIT_SHA'
