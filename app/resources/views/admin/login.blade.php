@@ -1,7 +1,7 @@
 @extends('admin.auth')
 @section('title', 'Login')
 @section('auth-title', 'Login')
-@section('auth-subtitle', 'Login untuk menggunakan Aplikasi Sistem Pendukung Keputusan')
+@section('auth-subtitle', 'SPK Stunting')
 @section('auth-css', asset('assets/compiled/css/auth.css'))
 @section('content')
 	<form action="{{ route('login.perform') }}" method="post" enctype="multipart/form-data"
