@@ -16,7 +16,8 @@ WORKDIR /app
 COPY composer.json composer.lock /app/
 
 # Install dependencies and generate autoloader
-RUN composer install --no-scripts --no-autoloader \
+RUN composer update --no-scripts --no-autoloader \
+    && composer install --no-scripts --no-autoloader \
     && composer dump-autoload --no-scripts --optimize
 
 COPY . .
