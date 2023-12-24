@@ -8,13 +8,13 @@
 		@yield('title') | Sistem Pendukung Keputusan metode AHP & SAW
 	</title>
 	<link rel="stylesheet" href="@yield('auth-css')" />
-	<link rel="stylesheet" href="{{ asset('assets/compiled/css/app.css') }}" />
-	<link rel="stylesheet" href="{{ asset('assets/compiled/css/app-dark.css') }}" />
-	<link rel="shortcut icon" href="{{ asset('assets/compiled/svg/favicon.svg') }}"
+	<link rel="stylesheet" href="{{ secure_asset('assets/compiled/css/app.css') }}" />
+	<link rel="stylesheet" href="{{ secure_asset('assets/compiled/css/app-dark.css') }}" />
+	<link rel="shortcut icon" href="{{ secure_asset('assets/compiled/svg/favicon.svg') }}"
 		type="image/x-icon" />
-	<link rel="shortcut icon" href="{{ asset('assets/static/images/logo/favicon.png') }}"
+	<link rel="shortcut icon" href="{{ secure_asset('assets/static/images/logo/favicon.png') }}"
 		type="image/png" />
-	<script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
+	<script src="{{ secure_asset('assets/static/js/initTheme.js') }}"></script>
 </head>
 
 <body onload="switchvalidation()">
@@ -24,7 +24,7 @@
 				<div id="auth-left">
 					<div class="auth-logo">
 						<div class="d-flex justify-content-between">
-							<!-- <img src="{{ asset('assets/compiled/svg/logo.svg') }}" alt="Logo" /> -->
+							<!-- <img src="{{ secure_asset('assets/compiled/svg/logo.svg') }}" alt="Logo" /> -->
 							<div class="theme-toggle d-flex gap-2 align-items-center mt-2">
 								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 									aria-hidden="true" role="img" class="iconify iconify--system-uicons"
@@ -73,11 +73,11 @@
 			</div>
 		</div>
 	</div>
-	<script src="{{ asset('assets/compiled/js/app.js') }}"></script>
-	<script src="{{ asset('assets/static/js/components/dark.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/tooltip.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/validate.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/password.js') }}"></script>
+	<script src="{{ secure_asset('assets/compiled/js/app.js') }}"></script>
+	<script src="{{ secure_asset('assets/static/js/components/dark.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/tooltip.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/validate.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/password.js') }}"></script>
 	<script type="text/javascript">
 		function submitform(e) {
 			const inputs = document.getElementsByTagName('input')

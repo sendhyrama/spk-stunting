@@ -4,7 +4,7 @@
 @section('auth-subtitle',
 	'Selamat datang kembali! Silahkan masukkan password baru untuk
 	melanjutkan.')
-@section('auth-css', asset('assets/compiled/css/auth-forgot-password.css'))
+@section('auth-css', secure_asset('assets/compiled/css/auth-forgot-password.css'))
 @section('content')
 	<form action="{{ route('password.update') }}" method="post" class="needs-validation">
 		@csrf
@@ -62,5 +62,5 @@
 	</div>
 @endsection
 @section('js')
-	<script type="text/javascript" src="{{ asset('js/password.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/password.js') }}"></script>
 @endsection

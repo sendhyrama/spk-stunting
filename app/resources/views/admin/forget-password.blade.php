@@ -2,7 +2,7 @@
 @section('title', 'Lupa Password')
 @section('auth-title', 'Lupa Password')
 @section('auth-subtitle', 'Masukkan email Anda untuk mendapatkan link reset password')
-@section('auth-css', asset('assets/compiled/css/auth-forgot-password.css'))
+@section('auth-css', secure_asset('assets/compiled/css/auth-forgot-password.css'))
 @section('content')
 	<form action="{{ route('password.email') }}" method="post" class="needs-validation">
 		@csrf

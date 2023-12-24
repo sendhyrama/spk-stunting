@@ -7,25 +7,25 @@
 	<title>
 		@yield('title') - SPK Stunting
 	</title>
-	<link rel="shortcut icon" href="{{ asset('assets/compiled/svg/favicon.svg') }}"
+	<link rel="shortcut icon" href="{{ secure_asset('assets/compiled/svg/favicon.svg') }}"
 		type="image/x-icon" />
-	<link rel="shortcut icon" href="{{ asset('assets/static/images/logo/favicon.png') }}"
+	<link rel="shortcut icon" href="{{ secure_asset('assets/static/images/logo/favicon.png') }}"
 		type="image/png" />
-	<link rel="stylesheet" href="{{ asset('assets/compiled/css/app.css') }}" />
-	<link rel="stylesheet" href="{{ asset('assets/compiled/css/app-dark.css') }}" />
-	<link rel="stylesheet" href="{{ asset('assets/compiled/css/iconly.css') }}" />
+	<link rel="stylesheet" href="{{ secure_asset('assets/compiled/css/app.css') }}" />
+	<link rel="stylesheet" href="{{ secure_asset('assets/compiled/css/app-dark.css') }}" />
+	<link rel="stylesheet" href="{{ secure_asset('assets/compiled/css/iconly.css') }}" />
 	<link rel="stylesheet" type="text/css"
-		href="{{ asset('assets/extensions/DataTables/datatables.min.css') }}">
+		href="{{ secure_asset('assets/extensions/DataTables/datatables.min.css') }}">
 	<link rel="stylesheet" type="text/css"
-		href="{{ asset('assets/compiled/css/table-datatable-jquery.css') }}">
-	<link rel="stylesheet" href="{{ asset('assets/extensions/apexcharts/apexcharts.css') }}">
+		href="{{ secure_asset('assets/compiled/css/table-datatable-jquery.css') }}">
+	<link rel="stylesheet" href="{{ secure_asset('assets/extensions/apexcharts/apexcharts.css') }}">
 	<link rel="stylesheet"
-		href="{{ asset('assets/extensions/toastify-js/src/toastify.css') }}" />
+		href="{{ secure_asset('assets/extensions/toastify-js/src/toastify.css') }}" />
 	<link rel="stylesheet" type="text/css"
-		href="{{ asset('assets/extensions/sweetalert2/sweetalert2.min.css') }}">
+		href="{{ secure_asset('assets/extensions/sweetalert2/sweetalert2.min.css') }}">
 	<link rel="stylesheet"
-		href="{{ asset('assets/extensions/@fortawesome/fontawesome-free/css/all.min.css') }}" />
-	<script src="{{ asset('assets/static/js/initTheme.js') }}"></script>
+		href="{{ secure_asset('assets/extensions/@fortawesome/fontawesome-free/css/all.min.css') }}" />
+	<script src="{{ secure_asset('assets/static/js/initTheme.js') }}"></script>
 </head>
 
 <body onload="switchvalidation()">
@@ -36,7 +36,7 @@
 					<div class="d-flex justify-content-between align-items-center">
 						<div class="logo">
 							<a href="{{ route('home.index') }}">
-								<!-- <img src="{{ asset('assets/compiled/svg/logo.svg') }}" alt="Logo" /> -->
+								<!-- <img src="{{ secure_asset('assets/compiled/svg/logo.svg') }}" alt="Logo" /> -->
 							</a>
 						</div>
 						<div class="theme-toggle d-flex gap-2 align-items-center mt-2">
@@ -260,27 +260,27 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="{{ asset('js/navbar.js') }}"></script>
-	<script src="{{ asset('assets/static/js/components/dark.js') }}"></script>
-	<script src="{{ asset('assets/compiled/js/app.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/navbar.js') }}"></script>
+	<script src="{{ secure_asset('assets/static/js/components/dark.js') }}"></script>
+	<script src="{{ secure_asset('assets/compiled/js/app.js') }}"></script>
 	<script type="text/javascript"
-		src="{{ asset('assets/extensions/jquery/jquery.min.js') }}"></script>
+		src="{{ secure_asset('assets/extensions/jquery/jquery.min.js') }}"></script>
 	<script
-		src="{{ asset('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js') }}">
+		src="{{ secure_asset('assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js') }}">
 	</script>
 	<script type="text/javascript"
-		src="{{ asset('assets/extensions/DataTables/datatables.min.js') }}"></script>
+		src="{{ secure_asset('assets/extensions/DataTables/datatables.min.js') }}"></script>
 	<script type="text/javascript"
-		src="{{ asset('assets/extensions/DataTables/Buttons-2.4.2/js/buttons.print.min.js') }}">
+		src="{{ secure_asset('assets/extensions/DataTables/Buttons-2.4.2/js/buttons.print.min.js') }}">
 	</script>
-	<script src="{{ asset('assets/extensions/apexcharts/apexcharts.min.js') }}"></script>
+	<script src="{{ secure_asset('assets/extensions/apexcharts/apexcharts.min.js') }}"></script>
 	<script type="text/javascript"
-		src="{{ asset('assets/extensions/toastify-js/src/toastify.js') }}"></script>
+		src="{{ secure_asset('assets/extensions/toastify-js/src/toastify.js') }}"></script>
 	<script type="text/javascript"
-		src="{{ asset('assets/extensions/sweetalert2/sweetalert2.min.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/tooltip.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/datatables.js') }}"></script>
-	<script type="text/javascript" src="{{ asset('js/validate.js') }}"></script>
+		src="{{ secure_asset('assets/extensions/sweetalert2/sweetalert2.min.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/tooltip.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/datatables.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/validate.js') }}"></script>
 	<script type="text/javascript">
 		$.ajaxSetup({
 			headers: {

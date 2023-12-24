@@ -153,7 +153,7 @@
 						}
 					}],
 					language: {
-						url: "{{ asset('assets/extensions/DataTables/DataTables-id.json') }}"
+						url: "{{ secure_asset('assets/extensions/DataTables/DataTables-id.json') }}"
 					},
 					dom: "Bfrtip",
 					buttons: [{

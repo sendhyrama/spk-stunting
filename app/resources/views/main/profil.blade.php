@@ -127,7 +127,7 @@
 	</div>
 @endsection
 @section('js')
-	<script type="text/javascript" src="{{ asset('js/password.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/password.js') }}"></script>
 	<script type="text/javascript">
 		function submitform(e) {
 			var errmsg;

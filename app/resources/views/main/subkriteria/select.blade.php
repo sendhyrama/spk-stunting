@@ -81,7 +81,7 @@
 						}
 					}],
 					language: {
-						url: "{{ asset('assets/extensions/DataTables/DataTables-id.json') }}"
+						url: "{{ secure_asset('assets/extensions/DataTables/DataTables-id.json') }}"
 					}
 				}).on('error.dt', function(e, settings, techNote, message) {
 					errorDT(message, techNote);

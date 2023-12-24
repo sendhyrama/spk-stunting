@@ -2,7 +2,7 @@
 @section('title', 'Login')
 @section('auth-title', 'Login')
 @section('auth-subtitle', 'SPK Stunting')
-@section('auth-css', asset('assets/compiled/css/auth.css'))
+@section('auth-css', secure_asset('assets/compiled/css/auth.css'))
 @section('content')
 	<form action="{{ route('login.perform') }}" method="post" enctype="multipart/form-data"
 		class="needs-validation">@csrf

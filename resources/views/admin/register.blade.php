@@ -2,7 +2,7 @@
 @section('title', 'Daftar')
 @section('auth-title', 'Daftar')
 @section('auth-subtitle', 'Selamat datang! Silahkan masukkan data Anda.')
-@section('auth-css', asset('assets/compiled/css/auth.css'))
+@section('auth-css', secure_asset('assets/compiled/css/auth.css'))
 @section('content')
 	<form action="{{ route('register.perform') }}" method="post" enctype="multipart/form-data"
 		class="needs-validation">@csrf
@@ -71,5 +71,5 @@
 	</div>
 @endsection
 @section('js')
-	<script type="text/javascript" src="{{ asset('js/password.js') }}"></script>
+	<script type="text/javascript" src="{{ secure_asset('js/password.js') }}"></script>
 @endsection
